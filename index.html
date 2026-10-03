@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyndaquil - Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="pokemon-card">
+            <div class="pokemon-info">
+                <div>
+                    <p class="number">#155</p>
+                    <h1 id="nome"></h1>
+                    <span id="tipo" class="type"></span>
+                </div>
+                <div class="stats">
+                    <p>Nível: <strong id="nivel"></strong></p>
+                    <p>Vida: <strong id="vida"></strong></p>
+                    <div class="bar"><div id="barraVida" class="fill vida"></div></div>
+                    <p>Energia: <strong id="energia"></strong></p>
+                    <div class="bar"><div id="barraEnergia" class="fill energia"></div></div>
+                    <p>Altura: <strong id="altura"></strong> m</p>
+                    <p>Peso: <strong id="peso"></strong> kg</p>
+                    <p>Habilidade: <strong id="habilidade"></strong></p>
+                </div>
+            </div>
+
+            <div class="game-area" id="gameArea">
+                <img id="sprite" src="assets/img/cyndaquil_down.png" alt="Cyndaquil">
+            </div>
+
+            <p class="controls">Use as setas do teclado para andar</p>
+
+            <div class="actions">
+                <button id="btnAtacar">ATACAR</button>
+                <button id="btnComer">COMER</button>
+                <button id="btnDescansar">DESCANSAR</button>
+                <button id="btnTreinar">TREINAR</button>
+                <button id="btnBrasas">USAR BRASAS</button>
+                <button id="btnDano">RECEBER DANO</button>
+            </div>
+
+            <div class="message-box">
+                <strong>Mensagem:</strong>
+                <span id="mensagem">Cyndaquil está pronto!</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
